@@ -1,0 +1,177 @@
+<!--
+--------------------------------
+COMP 1950 PROJECT
+
+Authors:
+
+(1) Joanna Flores (#A00733856)
+- Prepared the page skeleton
+
+(2) Herman Ho
+<Place a brief description of what you implemented here>
+--------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    --------------------------------
+    Page title and description
+    --------------------------------
+    -->
+	<title>COMP 1950 - Week 06 CSS Techniques Exercises</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta charset="utf-8" />
+    <meta name="description" content="page description here" />
+    
+    <!--
+    --------------------------------
+    CSS files
+    --------------------------------
+    -->
+    
+    <!-- style reset -->
+    <link type="text/css" href="/project/css/normalize.css" rel="stylesheet" />
+    
+    <!-- css file needed for implementing the default style of the side navigation -->
+    <link href="/project/css/jquery.mmenu.css" type="text/css" rel="stylesheet" />
+    
+    <!-- for positioning  -->
+    <link type="text/css" href="/project/css/positioning.css" rel="stylesheet" />
+    
+    <!--
+    --------------------------------
+    Javascipt files
+    --------------------------------
+    -->
+    <!-- for implementing jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- script files needed for implementing a side navigation -->
+    <script type="text/javascript" src="/project/js/jquery.mmenu.min.js"></script>
+    
+    <!-- for the navboxes in the main page and resources -->
+    <script type="text/javascript" src="/project/js/isotope.pkgd.js"></script>
+    
+    <!-- for positioning -->
+    <script type="text/javascript" src="/project/js/positioning.js"></script>
+    
+    <!-- HTML5 Shiv for IE earlier than version 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <!--#include virtual="/project/includes/headernav.html" -->
+    
+    <div id="outerwrapper">
+        
+        <!--
+        --------------------------------
+        Main Page Content
+        --------------------------------
+        -->
+        <main class="exercises page">
+            <h1>Exercises Six: CSS3</h1>
+            
+            <!-- Exercise #1 - CSS3 Box Model -->
+            <section>
+                <h2>Exercise 01: CSS3 Box Model</h2>
+                <ul>
+                    <li>Experiment with the new box model properties using your preferred web browser diagnostic tool (such as Firefox's Firebug)</li>
+                    <li>The box below is <code>id="better_box_model"</code>, in the file <code>css3_samples.css</code></li>
+                    <li>Apply border-radius, text-shadow and box-shadow effects.</li>
+                </ul>
+                
+                <div id="better_box_model">
+                    <p>CSS3, a better box model</p>
+                </div>
+            </section>
+            
+            <!-- Exercise #2 -- CSS3 Transitions Exercise -->
+            <section>
+                <h2>Exercise 2: CSS3 Transitions Exercise</h2>
+                <p><a href="http://bcitcomp.ca/comp1950/downloads/transitions_exercise.zip">Download the transitions exercise starting files.</a></p>
+
+                <div id="transition_image">
+                    <img src="http://bcitcomp.ca/1950/lectures/six/images/button_green.png" id="image_bottom" alt="yellow button" width="100px" height="100px">	
+                    <img src="http://bcitcomp.ca/1950/lectures/six/images/button_yellow.png" id="image_top" alt="yellow button" width="100px" height="100px">
+                </div>
+                
+                <section>
+                    <h3>Challenge A:</h3>
+                    <p>The yellow button image is absolutely positioned so that it overlaps a green button image beneath it.</p>	<ul>
+                        <li>First add a :hover pseudoclass to the <code>id="image_top"</code> that will set it's <code>opacity</code> to 0;</li>
+                        <li>Then add the transition states: First apply a transition to the opacity of <code>#image_top</code>. Note how the transtion is applied to both the :hover and non-hover states.</li>
+                        <li>Relocate the transition code from <code>#image_top</code> to <code>#image_top:hover</code>. Note how the transtion is applied to only the change from non-hover to :hover.</li>
+                        <li>For full control over this behavior, define transition code in both the before (#image_top) and after (#image_top:hover) rules.</li>
+
+                        <li>Follow the pattern:<br>
+                        <code>-vendorprefix-transition:property duration timing-function;</code></li>
+                        <li>use the notes below to guide to on the syntax</li>
+                        <li>demonstrate the finished transition to your instructor</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Challenge B:</h3>
+                    <p>Add transtion code that will alter the width or the height of the form inputs when they are in the 	<code>focus</code> state.</p>
+                    <ul>
+                        <li>transition either the width or the height. note how you will need to set the width in CSS for both the :focus and not :focused states.</li>
+                        <li>try transitioning several CSS properties (<code>width</code>, <code>height</code> and <code>border</code>) at once by using <code>all</code> as the assigned transitional property, eg: <code>transition:all 1s ease;</code></li>
+
+                    </ul>
+                    <form>
+                        <label for="username">Username</label>	
+                        <input type="text" name="username" id="username">
+                        <label for="password">Password</label>	
+                        <input type="text" name="password" id="password">
+                    </form>
+                </section>
+                
+                <section>
+                    <h3>Challenges A &amp; B:</h3>
+                    <p><a href="http://bcitcomp.ca/comp1950/downloads/transitions_exercise_solution.zip">Download a sample solution</a></p> 
+                </section>
+            </section>
+            
+            <!-- Exercise #3 - Animations and Keyframes -->
+            <section>
+                <h2>Exercise 03: Animations and Keyframes</h2>
+                <ul>
+                    <li>Download and examine these <a href="http://bcitcomp.ca/comp1950/downloads/animation_keyframes_exercise.zip">example animations</a></li>
+                    <li>Try adding or changing some of the properties being animated</li>
+                    <li>Create a new animation to change the width and height of one of the images used on these pages</li>	
+                    <li>Download  a <a href="http://bcitcomp.ca/comp1950/downloads/animation_keyframes_solution.zip">sample solution</a></li>
+                </ul>
+            </section>
+            
+            <!-- Exercise #4 - Multiple Backgrounds -->
+            <section>
+                <h2>Exercise 04: Multiple Backgrounds</h2>
+                <p>Experiment with multiple backgrounds, gradients, and hover effects in this CSS3 background demo and exercise.</p>
+                <ul>
+                    <li><a href="http://bcitcomp.ca/comp1950/downloads/multiple_background_exercise.zip">Download the source files</a></li>
+                    <li>Change the <code>cornflowerblue</code> background color to a <code>linear-gradient</code></li>
+                    <li>Add a <code>:hover</code> effect so that fewer 'layers' of clouds are displayed </li>
+                    <li>How can we apply the various vendor prefixes in this context?</li>
+                    <li>Try applying a <code>transition</code> effect on the <code>:hover</code>. How does the browser handle this?</li>
+                     <li><a href="http://bcitcomp.ca/comp1950/downloads/multiple_background_exercise_solution.zip">Download a sample solution</a></li> 
+                </ul>
+            </section>
+
+        </main>
+
+        <!--
+        --------------------------------
+        Footer
+        --------------------------------
+        -->
+        <footer>
+        </footer>
+        
+    </div>    
+    
+</body>
+</html>

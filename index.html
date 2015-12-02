@@ -1,0 +1,229 @@
+<!--
+--------------------------------
+COMP 1950 PROJECT
+
+Authors:
+
+(1) Joanna Flores (#A00733856)
+- Prepared the page skeleton
+
+(2) Herman Ho
+<Place a brief description of what you implemented here>
+--------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    --------------------------------
+    Page title and description
+    --------------------------------
+    -->
+	<title>COMP 1950 - Home</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta charset="utf-8" />
+    <meta name="description" content="page description here" />
+    
+    <!--
+    --------------------------------
+    CSS files
+    --------------------------------
+    -->
+    
+    <!-- style reset -->
+    <link type="text/css" href="/project/css/normalize.css" rel="stylesheet" />
+    
+    <!-- css file needed for implementing the default style of the side navigation -->
+    <link href="/project/css/jquery.mmenu.css" type="text/css" rel="stylesheet" />
+    
+    <!-- for positioning  -->
+    <link type="text/css" href="/project/css/positioning.css" rel="stylesheet" />
+    
+    <!--
+    --------------------------------
+    Javascipt files
+    --------------------------------
+    -->
+    <!-- for implementing jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- script files needed for implementing a side navigation -->
+    <script type="text/javascript" src="/project/js/jquery.mmenu.min.js"></script>
+    
+    <!-- for the navboxes in the main page and resources -->
+    <script type="text/javascript" src="/project/js/isotope.pkgd.js"></script>
+    
+    <!-- for positioning -->
+    <script type="text/javascript" src="/project/js/positioning.js"></script>
+    
+    <!-- HTML5 Shiv for IE earlier than version 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <!--#include virtual="/project/includes/headernav.html" -->
+    
+    <div id="outerwrapper">
+        
+        <!--
+        --------------------------------
+        Main Page Content
+        --------------------------------
+        -->
+        <main>
+            <section class="splashpage">
+                <!-- splash page -->
+                <h1>British Columbia Institute of Technology</h1>
+
+                <section>
+                    <h2>Welcome to COMP 1950</h2>
+                    <p>Follows on from COMP 1850 in more depth and introduces new topics and techniques for developing effective web sites</p>
+                </section>
+            </section>
+            
+            <section>
+                <!-- course contents -->
+                <h2 id="coursecontents">Course Contents</h2>
+                <p>Donec eget posuere purus, nec aliquet mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin dictum aliquet hendrerit. Aliquam a tempor dolor. Mauris vel scelerisque tortor, non ultrices sem. Nam vulputate, sem ac gravida molestie, tellus diam semper libero, ac molestie neque leo nec eros. Vivamus dignissim pulvinar sem vitae pharetra. Quisque nec ex facilisis, eleifend purus ut, malesuada nulla. Fusce euismod tristique metus nec varius. In hac habitasse platea dictumst. Cras finibus sodales libero, eu porttitor nunc accumsan hendrerit. Sed euismod felis nisl, molestie rhoncus eros tincidunt sit amet. Aenean non odio a diam egestas viverra nec id velit. Sed eleifend, lacus sit amet gravida dictum, arcu erat venenatis nisl, vitae congue felis libero ut lectus.</p>
+                
+                <div class="button-group filters-button-group">
+                    <button class="button is-checked" data-filter="*">all</button>
+                    <button class="button" data-filter=".lectures">lectures</button>
+                    <button class="button" data-filter=".exercises">exercises</button>
+                    <button class="button" data-filter=".homeworks">homeworks</button>
+                    <button class="button" data-filter=".project">project</button>
+                </div>
+                
+                <ul class="grid">
+                    <!-- Week 1-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 01<br /><strong>Tools &amp; Standards</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 01<br /><strong>Tools &amp; Standards</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 01<br /><strong>Tools &amp; Standards</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 2-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 02<br /><strong>HTML5</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 02<br /><strong>HTML5</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 02<br /><strong>HTML5</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 3-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 03<br /><strong>CSS Techniques</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 03<br /><strong>CSS Techniques</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 03<br /><strong>CSS Techniques</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 4-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 04<br /><strong>CSS Layouts</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 04<br /><strong>CSS Layouts</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 04<br /><strong>CSS Layouts</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 5-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 05<br /><strong>Responsive CSS</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 05<br /><strong>Responsive CSS</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 05<br /><strong>Responsive CSS</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 6-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="/project/lectures/week06.html">Week 06<br /><strong>CSS3</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="/project/exercises/week06.html">Week 06<br /><strong>CSS3</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="/project/homeworks/week06.html">Week 06<br /><strong>CSS3</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 7-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 07<br /><strong>Javascript Frameworks</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 07<br /><strong>Javascript Frameworks</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 07<br /><strong>Javascript Frameworks</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 8-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 08<br /><strong>Dynamic Content</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 08<br /><strong>Dynamic Content</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 08<br /><strong>Dynamic Content</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 9-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 09<br /><strong>Templating, SEO</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 09<br /><strong>Templating, SEO</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 09<br /><strong>Templating, SEO</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Week 10-->
+                    <li class="element-item lectures" data-category="lectures">
+                        <a href="#">Week 10<br /><strong>Methodology</strong><br />Lectures</a>
+                    </li>
+                    <li class="element-item exercises" data-category="exercises">
+                        <a href="#">Week 10<br /><strong>Methodology</strong><br />Exercises</a>
+                    </li>
+                    <li class="element-item homeworks" data-category="homeworks">
+                        <a href="#">Week 10<br /><strong>Methodology</strong><br />Homework</a>
+                    </li>
+                    
+                    <!-- Project -->
+                    <li class="element-item project" data-category="project">
+                        <a href="#">Week 11<br /><strong>Project Work</strong><br />&nbsp;</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!--
+        --------------------------------
+        Footer
+        --------------------------------
+        -->
+        <footer>
+        </footer>
+        
+    </div>    
+    
+</body>
+</html>
