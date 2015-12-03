@@ -1,0 +1,159 @@
+<!--
+--------------------------------
+COMP 1950 PROJECT
+
+Authors:
+
+(1) Joanna Flores (#A00733856)
+- Prepared the page skeleton
+
+(2) Herman Ho
+<Place a brief description of what you implemented here>
+--------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    --------------------------------
+    Page title and description
+    --------------------------------
+    -->
+	<title>COMP 1950 - Week 05 Responsive CSS Quiz</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta charset="utf-8" />
+    <meta name="description" content="page description here" />
+    
+    <!--
+    --------------------------------
+    CSS files
+    --------------------------------
+    -->
+    
+    <!-- style reset -->
+    <link type="text/css" href="/project/css/normalize.css" rel="stylesheet" />
+    
+    <!-- css file needed for implementing the default style of the side navigation -->
+    <link href="/project/css/jquery.mmenu.css" type="text/css" rel="stylesheet" />
+    
+    <!-- for positioning  -->
+    <link type="text/css" href="/project/css/positioning.css" rel="stylesheet" />
+    
+    <!--
+    --------------------------------
+    Javascipt files
+    --------------------------------
+    -->
+    <!-- for implementing jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    
+    <!-- script files needed for implementing a side navigation -->
+    <script type="text/javascript" src="/project/js/jquery.mmenu.min.js"></script>
+    
+    <!-- for the navboxes in the main page and resources -->
+    <script type="text/javascript" src="/project/js/isotope.pkgd.js"></script>
+    
+    <!-- for activating plugins for positioning -->
+    <script type="text/javascript" src="/project/js/positioning.js"></script>
+    
+    <!-- for validating the quiz -->
+    <script type="text/javascript" src="/project/js/jquery.timer.js"></script>
+    <script type="text/javascript" src="/project/js/validatequiz.js"></script>
+    
+    
+    
+    <!-- HTML5 Shiv for IE earlier than version 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <!--#include virtual="/project/includes/headernav.html" -->
+    
+    <div id="outerwrapper">
+        
+        <!--
+        --------------------------------
+        Main Page Content
+        --------------------------------
+        -->
+        <main class="quiz page">
+            <h1>Week 05: Responsive CSS</h1>
+            <p>This quiz is to be done individually and is closed book. You have 3 minutes to finish the quiz.</p>
+            
+            <form id="login">
+                <section class="studentinfo">
+                    <h2>Student Information:</h2>
+                    <div class="row">
+                        <p><strong>Name:</strong></p>
+                        <input type="text" id="name" required="required" autofocus="autofocus" />
+                    </div>
+                    <div class="row">
+                        <p><strong>Student Number:</strong></p>
+                        <input type="text" id="studentnumber" value="A00" required="required" pattern="A00[0-9]{6}" title="The student number must start with A00 followed by 6-digits" />
+                    </div>
+                </section>
+                <section id="quizsection" class="quizsection hidequiz">
+                    <h2>Quiz #5</h2>
+                    <ol>
+                        <li>
+                            <p>Name at least two things that you should do to a web page to display it for printing (2 marks)</p>
+                            <textarea id="item1" 
+                                      rows="5">
+                            </textarea>
+                        </li>
+                        <li>
+                            <p>Media queries can be applied either in the <em>link</em> tag or defined in an external CSS file. (1 mark)</p>
+                            <fieldset>
+                                <div><input type="radio" id="item2" name="item2" value="true" />&nbsp;True</div>
+                                <div><input type="radio" id="item2" name="item2" value="true" />&nbsp;False</div>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <p>Complete the CSS rule below to ensure images will scale to the size of the parent (2 marks)</p>
+                            <code>img {</code>
+                                <textarea id="item3" 
+                                          rows="3">
+                                </textarea>
+                            <code>}</code>
+                        </li>
+                        <li>
+                            <p>Choose the media query breakpoint that will match when the browser viewport is thinnest (1 mark)</p>
+                            <fieldset>
+                                <div><input type="radio" id="item4" name="item4" value="a" />&nbsp;@media only screen and (min-width:1024px)</div>
+                                <div><input type="radio" id="item4" name="item4" value="b" />&nbsp;@media only screen and (min-width:300px) and (max-width:800px)</div>
+                                <div><input type="radio" id="item4" name="item4" value="c" />&nbsp;@media only screen and (min-width:800px) and (max-width:1024px)</div>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <p>Write the media query breakpoint for when a browser viewport is less than 400px tall (2 marks)</p>
+                            <textarea id="item5"
+                                      rows="5">
+                            </textarea>
+                        </li>
+                        <li>
+                            <p>Name at least two design best practices when styling for small devices (2 marks)</p>
+                            <textarea id="item6"
+                                      rows="6">
+                            </textarea>
+                        </li>
+                    </ol>
+                </section>
+            </form>
+            <button id="submitquiz" type="submit"><span>Start Quiz</span></button>
+        </main>
+
+        <!--
+        --------------------------------
+        Footer
+        --------------------------------
+        -->
+        <footer>
+        </footer>
+        
+    </div>    
+    
+</body>
+</html>
